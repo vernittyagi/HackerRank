@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int sum = 0;
+int sumofnumber(n){
+    while(n>0){
+        sum = sum + (n%10);
+        n = n/10;
+    }
+    return sum;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    sumofnumber(n);  
+    printf("%d", sum);
+}
